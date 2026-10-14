@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fff8f5">
+<title>Slump Dating App — Meet someone who feels like home</title>
+<style>
+:root{--rose:#d94f72;--coral:#ff806b;--ink:#33252b;--muted:#796b70;--cream:#fff8f5;--white:#fff;--line:#f0dfe1;--pink:#ffe7e9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}a{color:inherit;text-decoration:none}button,input,select{font:inherit}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+header{padding:20px 0;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:10px;font-weight:850;font-size:1.45rem;letter-spacing:-.05em}.brand-mark{width:35px;height:35px;border-radius:12px;background:linear-gradient(135deg,var(--rose),var(--coral));display:grid;place-items:center;color:white;font-size:20px;box-shadow:0 7px 18px #d94f7230}.nav{display:flex;align-items:center;gap:28px;color:var(--muted);font-size:.93rem}.nav a:hover{color:var(--rose)}.btn{border:0;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 20px;border-radius:999px;font-weight:750;transition:transform .18s,box-shadow .18s}.btn:hover{transform:translateY(-2px)}.btn-primary{background:linear-gradient(110deg,var(--rose),var(--coral));color:white;box-shadow:0 10px 24px #d94f7228}.btn-light{background:#fff;color:var(--rose);border:1px solid var(--line)}.hero{display:grid;grid-template-columns:1.03fr .97fr;align-items:center;gap:45px;padding:58px 0 80px}.eyebrow{display:inline-flex;gap:8px;align-items:center;padding:8px 13px;border-radius:999px;background:#ffe9e9;color:#b53c5c;font-size:.8rem;font-weight:800;letter-spacing:.04em}.eyebrow span{width:7px;height:7px;border-radius:50%;background:var(--coral)}h1{font-size:clamp(2.7rem,5.6vw,5.1rem);line-height:.99;letter-spacing:-.065em;margin:22px 0}.accent{color:var(--rose)}.hero p{font-size:1.1rem;line-height:1.8;color:var(--muted);max-width:510px;margin:0 0 26px}.hero-actions{display:flex;align-items:center;gap:15px;flex-wrap:wrap}.social-proof{display:flex;align-items:center;gap:12px;margin-top:27px;color:var(--muted);font-size:.85rem}.avatars{display:flex;padding-left:5px}.avatars span{width:31px;height:31px;margin-left:-5px;border:2px solid var(--cream);border-radius:50%;display:grid;place-items:center;font-size:14px;background:#f8d4d7}.hero-art{position:relative;min-height:475px;display:grid;place-items:center}.blob{position:absolute;width:88%;height:88%;border-radius:48% 52% 44% 56% / 49% 40% 60% 51%;background:linear-gradient(145deg,#ffe3df,#ffd9e4);transform:rotate(-7deg)}.profile-main{position:relative;width:min(310px,75%);background:white;border-radius:28px;overflow:hidden;box-shadow:0 28px 70px #9c4c6126;transform:rotate(-3deg);z-index:2}.portrait{height:310px;display:grid;place-items:center;font-size:100px;background:linear-gradient(145deg,#edc5b4,#f8d8cf 50%,#d5a6a2)}.profile-info{padding:17px 19px 20px}.profile-info h3{margin:0;font-size:1.2rem}.profile-info p{margin:4px 0 0;color:var(--muted);font-size:.88rem}.verified{color:#2e9a78;font-size:.78rem;font-weight:700}.floating-note{position:absolute;z-index:3;background:white;padding:13px 16px;border-radius:16px;box-shadow:0 12px 30px #9c4c611f;font-size:.86rem;font-weight:750}.note-top{top:48px;right:0;transform:rotate(4deg)}.note-bottom{bottom:43px;left:0;transform:rotate(-5deg)}.heart{color:var(--rose);font-size:1.2rem}.section{padding:75px 0}.section-head{text-align:center;max-width:640px;margin:0 auto 40px}.section-head .eyebrow{margin-bottom:10px}.section h2{font-size:clamp(2rem,4vw,3.15rem);letter-spacing:-.05em;line-height:1.1;margin:12px 0}.section-head p{color:var(--muted);margin:12px 0 0}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.step{background:white;border:1px solid #f3e5e5;border-radius:24px;padding:28px;box-shadow:0 10px 35px #7b3d4d08}.step-icon{height:54px;width:54px;display:grid;place-items:center;border-radius:18px;background:var(--pink);font-size:25px}.step-num{float:right;color:#e6c8ce;font-size:1.1rem;font-weight:850}.step h3{margin:22px 0 8px;font-size:1.15rem}.step p{margin:0;color:var(--muted);font-size:.95rem}.matches{background:#fff0ed}.match-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.match-card{background:white;border-radius:24px;overflow:hidden;border:1px solid #f4e0df;box-shadow:0 12px 35px #743b480a}.match-photo{height:245px;display:grid;place-items:center;font-size:82px;position:relative}.photo-one{background:linear-gradient(135deg,#f4d2b9,#e8a9a4)}.photo-two{background:linear-gradient(135deg,#e8c8b9,#f7e0c5)}.photo-three{background:linear-gradient(135deg,#f0c5ce,#d9b5cf)}.online{position:absolute;top:15px;left:15px;background:#fffdf7;padding:6px 10px;border-radius:999px;font-size:.72rem;font-weight:800;color:#3b8e6a}.match-details{padding:17px 18px 18px}.match-title{display:flex;align-items:center;justify-content:space-between;gap:10px}.match-title h3{margin:0;font-size:1.13rem}.match-title span{color:var(--muted);font-size:.84rem}.match-details p{color:var(--muted);font-size:.88rem;margin:7px 0 14px}.tags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:17px}.tag{background:#fff1f0;color:#9b4b5b;border-radius:999px;padding:5px 9px;font-size:.75rem;font-weight:700}.card-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}.card-actions button{padding:10px;border-radius:13px;font-weight:800;border:1px solid var(--line);cursor:pointer;background:white;color:var(--muted)}.card-actions .like{background:var(--rose);border-color:var(--rose);color:white}.card-actions button:active{transform:scale(.98)}.card-feedback{min-height:20px;font-size:.78rem;color:var(--rose);font-weight:700;margin-top:9px}.sample-note{text-align:center;color:var(--muted);font-size:.82rem;margin:23px 0 0}.waitlist{padding:78px 0}.waitlist-box{position:relative;overflow:hidden;background:linear-gradient(120deg,#d94f72,#ff8872);border-radius:30px;padding:52px;color:white;display:grid;grid-template-columns:1fr .85fr;gap:40px;align-items:center}.waitlist-box:after{content:"♡";position:absolute;right:35%;top:-90px;font-size:280px;line-height:1;color:#ffffff12;pointer-events:none}.waitlist-box h2{font-size:clamp(2rem,4vw,3.3rem);letter-spacing:-.055em;line-height:1.05;margin:0 0 14px;max-width:500px}.waitlist-box p{color:#fff0f1;margin:0;max-width:470px}.form{position:relative;z-index:1;background:white;padding:20px;border-radius:20px;color:var(--ink);box-shadow:0 15px 35px #8c29402b}.form label{display:block;font-size:.8rem;font-weight:800;margin:0 0 6px}.form input,.form select{width:100%;border:1px solid var(--line);border-radius:12px;padding:12px 13px;background:#fffdfd;color:var(--ink);outline:none;margin-bottom:13px}.form input:focus,.form select:focus{border-color:var(--rose);box-shadow:0 0 0 3px #d94f7215}.form .btn{width:100%;margin-top:2px}.form-small{font-size:.75rem;color:var(--muted);margin:10px 0 0!important;text-align:center}.success{display:none;margin-top:12px;padding:10px;border-radius:10px;background:#eaf8f1;color:#247b58;font-size:.85rem;font-weight:700}.form-note{font-size:.75rem;color:var(--muted);margin-top:12px}footer{padding:25px 0 35px;display:flex;justify-content:space-between;align-items:center;gap:15px;color:var(--muted);font-size:.83rem;border-top:1px solid var(--line)}footer .brand{color:var(--ink);font-size:1.1rem}footer .brand-mark{width:29px;height:29px;font-size:16px}
+@media(max-width:800px){.nav a:not(.btn){display:none}.hero{grid-template-columns:1fr;gap:20px;padding:42px 0 55px}.hero-copy{text-align:center}.hero p{margin-left:auto;margin-right:auto}.hero-actions,.social-proof{justify-content:center}.hero-art{min-height:405px}.profile-main{width:270px}.portrait{height:270px}.steps,.match-grid{grid-template-columns:1fr 1fr}.step:last-child{grid-column:1/-1}.waitlist-box{grid-template-columns:1fr;padding:34px 25px;gap:25px}.waitlist-box:after{right:-20px;top:90px}.section{padding:58px 0}}
+@media(max-width:540px){.wrap{width:min(100% - 28px,1160px)}header{padding:15px 0}.nav{gap:0}.nav .btn{padding:10px 14px;font-size:.82rem}.brand{font-size:1.25rem}.hero{padding-top:32px}h1{font-size:clamp(2.65rem,13vw,3.7rem)}.hero p{font-size:1rem}.hero-art{min-height:370px}.profile-main{width:245px}.portrait{height:240px}.note-top{right:-3px;top:28px}.note-bottom{left:-2px;bottom:25px}.steps,.match-grid{grid-template-columns:1fr}.step:last-child{grid-column:auto}.match-photo{height:230px}.section-head{margin-bottom:28px}.waitlist{padding:48px 0}.waitlist-box{border-radius:24px;padding:28px 20px}footer{flex-direction:column;text-align:center}.social-proof{font-size:.78rem}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <a class="brand" href="#" aria-label="Slump Dating App home"><span class="brand-mark">♡</span> Slump</a>
+  <nav class="nav" aria-label="Main navigation">
+    <a href="#how-it-works">How it works</a><a href="#discover">Discover</a>
+    <a class="btn btn-primary" href="#waitlist">Get early access <span>→</span></a>
+  </nav>
+</header>
+<main>
+<section class="hero wrap">
+  <div class="hero-copy">
+    <span class="eyebrow"><span></span> A little closer to your person</span>
+    <h1>Less swiping.<br>More <span class="accent">sparks.</span></h1>
+    <p>Meet people who get you. Slump brings singles across the United States together for genuine connections, thoughtful matches, and the kind of chemistry that feels easy.</p>
+    <div class="hero-actions"><a class="btn btn-primary" href="#waitlist">Join the waitlist <span>→</span></a><a class="btn btn-light" href="#discover">Meet the community ↓</a></div>
+    <div class="social-proof"><div class="avatars"><span>😊</span><span>🌸</span><span>✨</span><span>💗</span></div><span><strong>Good connections start here.</strong><br>Be part of our first wave of members.</span></div>
+  </div>
+  <div class="hero-art" aria-label="Illustration of a sample dating profile">
+    <div class="blob"></div><div class="floating-note note-top"><span class="heart">♥</span> A little spark!</div>
+    <article class="profile-main"><div class="portrait" role="img" aria-label="Illustrated sample profile portrait">👨🏻‍🦱</div><div class="profile-info"><h3>Michael, 26 <span class="verified">✓</span></h3><p>📍 3 miles away · Loves live music</p></div></article>
+    <div class="floating-note note-bottom">✨ Made for meaningful matches</div>
+  </div>
+</section>
+<section class="section wrap" id="how-it-works">
+  <div class="section-head"><span class="eyebrow">Simple by design</span><h2>Three little steps.<br><span class="accent">One big possibility.</span></h2><p>Meeting someone new shouldn't feel like a full-time job. Here's how Blush keeps it easy.</p></div>
+  <div class="steps">
+    <article class="step"><span class="step-num">01</span><div class="step-icon">✍️</div><h3>Create your profile</h3><p>Share a little about yourself, what you love, and what you're hoping to find.</p></article>
+    <article class="step"><span class="step-num">02</span><div class="step-icon">💞</div><h3>Get matched</h3><p>Discover local singles with shared interests, compatible values, and a spark worth exploring.</p></article>
+    <article class="step"><span class="step-num">03</span><div class="step-icon">💬</div><h3>Start chatting</h3><p>When the interest is mutual, break the ice and see where a good conversation goes.</p></article>
+  </div>
+</section>
+<section class="section matches" id="discover">
+  <div class="wrap"><div class="section-head"><span class="eyebrow">Your next hello</span><h2>A peek at your <span class="accent">kind of people.</span></h2><p>These are sample profiles for a U.S.-focused dating experience. Tap Like or Pass to try the cards.</p></div>
+  <div class="match-grid">
+    <article class="match-card"><div class="match-photo photo-one" role="img" aria-label="Illustrated sample profile">👨🏾‍🦱<span class="online">● Active today</span></div><div class="match-details"><div class="match-title"><h3>Daniel, 28</h3><span>📍 Nearby</span></div><p>Big laughs, bigger playlists. Looking for my favorite person.</p><div class="tags"><span class="tag">Afrobeats</span><span class="tag">Foodie</span><span class="tag">Beach days</span></div><div class="card-actions"><button class="like" data-action="like">♥ Like</button><button data-action="pass">✕ Pass</button></div><div class="card-feedback" aria-live="polite"></div></div></article>
+    <article class="match-card"><div class="match-photo photo-two" role="img" aria-label="Illustrated sample profile">👩🏻‍🦰<span class="online">● Active today</span></div><div class="match-details"><div class="match-title"><h3>Zara, 25</h3><span>📍 Nearby</span></div><p>Bookshop explorer, sunset chaser, and enthusiastic pasta critic.</p><div class="tags"><span class="tag">Books</span><span class="tag">Travel</span><span class="tag">Cooking</span></div><div class="card-actions"><button class="like" data-action="like">♥ Like</button><button data-action="pass">✕ Pass</button></div><div class="card-feedback" aria-live="polite"></div></div></article>
+    <article class="match-card"><div class="match-photo photo-three" role="img" aria-label="Illustrated sample profile">👨🏻‍🦲<span class="online">● Active today</span></div><div class="match-details"><div class="match-title"><h3>Michael, 30</h3><span>📍 Nearby</span></div><p>Gym in the morning, trying new restaurants by night.</p><div class="tags"><span class="tag">Fitness</span><span class="tag">Brunch</span><span class="tag">Movies</span></div><div class="card-actions"><button class="like" data-action="like">♥ Like</button><button data-action="pass">✕ Pass</button></div><div class="card-feedback" aria-live="polite"></div></div></article>
+  </div><p class="sample-note">Profile cards are illustrative samples, not real members or verified U.S. locations. Be kind, stay curious, and date at your own pace.</p>
+  </div>
+</section>
+<section class="waitlist wrap" id="waitlist">
+  <div class="waitlist-box"><div><span class="eyebrow" style="background:#ffffff25;color:white">You're invited</span><h2>Your next chapter could start with a hello.</h2><p>Join the U.S. early-access list and be among the first to explore Slump when we open our doors.</p></div>
+  <form class="form" id="waitlist-form">
+    <label for="name">Your name</label><input id="name" name="name" type="text" placeholder="What should we call you?" autocomplete="name" required>
+    <label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+    <label for="city">U.S. city and state</label><input id="city" name="city" type="text" placeholder="e.g. Seattle, WA" autocomplete="address-level2" required>
+    <label for="zodiac">Zodiac sign</label><select id="zodiac" name="zodiac" required><option value="" disabled selected>Select your zodiac sign</option><option>Aries ♈</option><option>Taurus ♉</option><option>Gemini ♊</option><option>Cancer ♋</option><option>Leo ♌</option><option>Virgo ♍</option><option>Libra ♎</option><option>Scorpio ♏</option><option>Sagittarius ♐</option><option>Capricorn ♑</option><option>Aquarius ♒</option><option>Pisces ♓</option><option>Not sure</option></select>
+    <button class="btn btn-primary" type="submit">Save my spot <span>→</span></button>
+    <p class="form-small">No pressure, no spam — just early access news.</p><div class="success" id="success" role="status">You're on the demo list! Connect this form to your waitlist service to collect real sign-ups.</div>
+    <p class="form-note">By signing up, you agree to receive launch updates. You can unsubscribe any time.</p>
+  </form></div>
+</section>
+</main>
+<footer class="wrap"><a class="brand" href="#"><span class="brand-mark">♡</span> Slump</a><span>Made for real connection across the United States.</span><span>© 2026 Slump Dating App · A sample concept</span></footer>
+<script>
+document.querySelectorAll('.card-actions button').forEach(button => {
+  button.addEventListener('click', () => {
+    const card = button.closest('.match-card');
+    const feedback = card.querySelector('.card-feedback');
+    const action = button.dataset.action;
+    feedback.textContent = action === 'like' ? '♥ Like saved for this demo!' : 'Passed — there are more people to meet.';
+    card.querySelectorAll('button').forEach(b => b.disabled = true);
+    card.querySelectorAll('button').forEach(b => b.style.opacity = '.6');
+    button.style.opacity = '1';
+  });
+});
+document.getElementById('waitlist-form').addEventListener('submit', event => {
+  event.preventDefault();
+  document.getElementById('success').style.display = 'block';
+});
+</script>
+</body>
+</html>
